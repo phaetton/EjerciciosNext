@@ -1,0 +1,67 @@
+<!--Coloca una etiqueta header con título Reloj SVG.
+Utiliza la etiqueta svg y crea un gráfico de 200 x 200 pixeles.
+Crea un grupo con la etiqueta g y haz el fondo del reloj.
+Dentro crea un círculo centrado en el punto 100, 100 y con radio 100 de borde 1 y con relleno de #eeeeee.
+Crea 12 líneas negras de stroke 1 con los siguientes valores (estos corresponden a los indicadores de hora).
+x1="100" y1="10" x2="100" y2="0"
+x1="150" y1="13" x2="145" y2="22"
+x1="187" y1="50" x2="178" y2="55"
+x1="190" y1="100" x2="200" y2="100"
+x1="187" y1="150" x2="178" y2="145"
+x1="150" y1="187" x2="145" y2="178"
+x1="100" y1="190" x2="100" y2="200"
+x1="50" y1="187" x2="55" y2="178"
+x1="13" y1="150" x2="22" y2="145"
+x1="0" y1="100" x2="10" y2="100"
+x1="13" y1="50" x2="22" y2="55"
+x1="50" y1="13" x2="55" y2="22"
+Crear otro grupo para las agujas del reloj.
+Dentro crear la aguja de las horas azul con stroke 3 y valores x1="100" y1="100" x2="100" y2="45".
+Dentro crear la aguja de los minutos azul con stroke 2 y valores x1="100" y1="100" x2="180" y2="100".
+Dentro crear la aguja de los segundos rojo con stroke 1 y valores x1="100" y1="100" x2="48" y2="180".-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content=“Rafael Serrano”>
+    <meta name="description" content=“Reloj vector“>
+    <title>Ejercicio de SVG</title>
+  </head>
+  <body>
+  <header>
+	<h1>
+		Reloj SVG
+	</h1>
+<p>
+<svg width="200px" height="200px" viewBox="0 0 200 200">
+    <g id="fondorelog" stroke="black" stroke-width="1">
+        <circle cx="100" cy="100" r="100" stroke="black" fill="#eeeeee" />
+        <line x1="100" y1="10" x2="100" y2="0"/>
+        <line x1="150" y1="13" x2="145" y2="22"/>
+        <line x1="187" y1="50" x2="178" y2="55"/>
+        <line x1="190" y1="100" x2="200" y2="100"/>
+        <line x1="187" y1="150" x2="178" y2="145"/>
+        <line x1="150" y1="187" x2="145" y2="178"/>
+        <line x1="100" y1="190" x2="100" y2="200"/>
+        <line x1="50" y1="187" x2="55" y2="178"/>
+        <line x1="13" y1="150" x2="22" y2="145"/>
+        <line x1="0" y1="100" x2="10" y2="100"/>
+        <line x1="13" y1="50" x2="22" y2="55"/>
+        <line x1="50" y1="13" x2="55" y2="22"/>
+    </g>
+     <g id="manecillas">
+        <line x1="100" y1="100" x2="100" y2="45" stroke="blue" stroke-width="3"/>
+        <line x1="100" y1="100" x2="180" y2="100" stroke="blue" stroke-width="2"/>
+        <line x1="100" y1="100" x2="48" y2="180" stroke="red" stroke-width="1"/>
+    </g>
+</svg>
+</p>
+</header>
+<footer>
+	Derechos Reservados (Lic. Rafael Serrano)
+</footer>
+   </body>
+</html>
